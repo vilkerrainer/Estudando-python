@@ -18,18 +18,19 @@ def limpar_terminal():
 
 
 def gerar_senha(tamanho):
-    digitos = string.ascii_letters + string.digits + string.punctuation
-    
-    senha = [
-        random.choice(string.ascii_lowercase),
-        random.choice(string.ascii_uppercase),
-        random.choice(string.digits),
-        random.choice(string.punctuation)
-    ]
-    
-    senha += random.choices(digitos, k=tamanho - 4)
-    
-    random.shuffle(senha)
+    if tamanho < 4:
+        caracteres = string.ascii_letters + string.digits + string.punctuation
+        senha = random.choices(caracteres, k=tamanho)
+    else:
+        digitos = string.ascii_letters + string.digits + string.punctuation
+        senha = [
+            random.choice(string.ascii_lowercase),
+            random.choice(string.ascii_uppercase),
+            random.choice(string.digits),
+            random.choice(string.punctuation)
+        ]
+        senha += random.choices(digitos, k=tamanho - 4)
+        random.shuffle(senha)
     
     return ''.join(senha)
 
