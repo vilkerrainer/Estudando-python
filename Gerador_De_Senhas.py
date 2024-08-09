@@ -52,6 +52,7 @@ while True:
         limpar_terminal()
         print("Então vamos lá")
     elif repetir.lower() == "n":
+        print("Utilize bem sua nova senha: ")
         break
     else:
         print("Digite y ou n")
