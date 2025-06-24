@@ -1,0 +1,6 @@
+id,produto,categoria,valor_unitario,quantidade,total_venda,imposto,lucro
+1,Cafe,Café,9.5,3,28.5,2.85,25.65
+2,Cha Verde,Chá,5.75,5,28.75,2.88,25.88
+4,Café,Café,8.9,1,8.9,0.89,8.01
+6,Café,Café,10.25,2,20.5,2.05,18.45
+7,Suco,Sucos,4.5,4,18.0,1.8,16.2
